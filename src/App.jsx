@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import HintButton from "@/components/HintButton";
+import Editor from "@/components/Editor";
+import Output from "@/components/Output";
 
 function App() {
   return (
@@ -7,9 +9,9 @@ function App() {
       <HintButton />
       <Header />
 
-      <div className="grid grid-cols-2 gap-4">
-        <div>test</div>
-        <div>test</div>
+      <div className="mt-4 grid lg:grid-cols-2 gap-4 h-3/4">
+        <Editor />
+        <Output />
       </div>
     </div>
   );
