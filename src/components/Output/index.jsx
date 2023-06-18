@@ -1,9 +1,16 @@
+import { useSelector } from "react-redux";
+import { marked } from "marked";
+
 const Output = () => {
+  const { text } = useSelector((state) => state.parser);
+  const parsed = marked
+    .options({ mangle: false, headerIds: false })
+    .parse(text);
+
   return (
-    <textarea
-      className="p-4 text-xl resize-none shadow-md"
-      readOnly
-      defaultValue={"Hello World!"}
+    <div
+      className="p-4 min-h-1/2 lg:h-full overflow-auto text-xl bg-white resize-none shadow-md"
+      dangerouslySetInnerHTML={{ __html: parsed }}
     />
   );
 };
