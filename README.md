@@ -7,6 +7,7 @@ I tried to make a clean software architecture and responsive web design also the
 - Vite,
 - React,
 - Redux Toolkit,
-- Tailwind CSS
+- Tailwind CSS,
+- Marked
 
-### You can check the live version of the project [here](https://example.com).
+### You can check the live version of the project [here](https://redux-markdown-previewer.vercel.app/).
